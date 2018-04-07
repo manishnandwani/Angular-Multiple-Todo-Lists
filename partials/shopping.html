@@ -1,0 +1,17 @@
+
+<h1>Shopping To do list</h1>
+
+<div class="pad">
+<h3>Add list item</h3>
+<input type="text" ng-model="shop.item">
+<button class="btn btn-success" ng-click="shop.addTask()">Add</button>
+
+<ul>
+    <li ng-class="{'done':task.status}" ng-repeat="task in shop.tasks" ng-click="shop.check(task.id)">
+        {{task.name}}
+        <button class="btn btn-danger" ng-click="shop.delTask(task.id)">X</button>
+    </li>
+</ul>
+
+<a href="#!/home" ><span class="label label-danger">Return</span></a>
+</div>

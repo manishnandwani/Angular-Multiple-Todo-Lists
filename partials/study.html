@@ -1,0 +1,15 @@
+
+<h1>Studying To do list</h1>
+
+<h3>Add list item</h3>
+<input type="text" ng-model="study.item">
+<button class="btn btn-success" ng-click="study.addTask()">Add</button>
+
+<ul>
+    <li ng-class="{'done':task.status}" ng-repeat="task in study.tasks" ng-click="study.check(task.id)">
+        {{task.name}}
+        <button class="btn btn-danger" ng-click="study.delTask(task.id)">X</button>
+    </li>
+</ul>
+
+<a href="#!/home" ><span class="label label-danger">Return</span></a>

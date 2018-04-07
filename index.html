@@ -1,0 +1,67 @@
+<html ng-app="todoapp">
+    <head>
+        <title>Angular Assignment 2</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+       
+        <!-- <script src="node_modules/jquery/dist/jquery.js"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+        <script src="app.js"></script>
+
+        <style>
+            .done{
+                text-decoration: line-through;
+            }
+            .back{
+                background-color: rgb(127, 208, 255);
+            }
+            .pad{
+                margin-left:20px; 
+                
+            }
+            h1{
+                text-align: center;
+                color:rgb(112, 32, 0);
+                background:rgb(223, 197, 203) 
+            }
+            .m{
+                margin-left: 270%;
+                margin-top:10px;
+            }
+
+            .carousel-inner img {
+    /* -webkit-filter: grayscale(90%); */
+    /* filter: grayscale(90%); make all photos black and white  */
+    width: 100%; /* Set width to 100% */
+   
+    margin-top:0%
+    }
+
+    .carousel-caption h3 {
+        color: #fff !important;
+    }
+
+    @media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+    
+}
+        </style>
+    </head>
+
+    <body class="back">
+        
+
+        <ng-view>
+
+        </ng-view>
+
+    </body>
+</html>
